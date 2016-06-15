@@ -98,9 +98,11 @@ set $workspace1 "1: |"
 set $workspace2 "2: |"
 set $workspace3 "3: |"
 set $workspace4 "4:  |"
-set $workspace5 "5: |"
+set $workspace5 "5: |"
 set $workspace6 "6:  |"
 set $workspace7 "7: |"
+set $workspace8 "8: |"
+set $workspace9 "9: |"
 
 
 # switch to workspace
@@ -111,8 +113,8 @@ bindsym $mod+apostrophe workspace $workspace4
 bindsym $mod+parenleft workspace $workspace5
 bindsym $mod+minus workspace $workspace6 
 bindsym $mod+egrave workspace $workspace7
-bindsym $mod+underscore workspace 8
-bindsym $mod+ccedilla workspace 9
+bindsym $mod+underscore workspace $workspace8
+bindsym $mod+ccedilla workspace $workspace9
 bindsym $mod+agrave workspace 10
 
 # Application to Workspace
@@ -122,6 +124,9 @@ assign [class="TeamSpeak 3"] $workspace1
 assign [class="smplayer"] $workspace6
 assign [class="Transmission"] $workspace7
 assign [class="Blender"] $workspace4
+assign [class="kdenlive"] $workspace9
+assign [class="libreoffice"] $workspace8
+assign [class="libreoffice-writer"] $workspace8
 
 # Floating windows
 for_window [class="Nautilus"] floating enable
@@ -181,10 +186,10 @@ bindsym $mod+r mode "resize"
 
 # Variables for Color 
 
-set $bg-color 	         #2f343f
+set $bg-color 	         #34495e
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
-set $inactive-text-color #676E7D
+set $inactive-text-color #7f8c8d
 set $urgent-bg-color     #e74c3c
 
 # window colors
@@ -202,7 +207,7 @@ hide_edge_borders both
 bar {
         status_command i3blocks -c .config/i3/i3blocks.conf
 	colors {
-		background $bg-color
+		background $inactive-bg-color 
 	    	separator #757575
 		#                  border             background         text
 		focused_workspace  $bg-color          $bg-color          $text-color
