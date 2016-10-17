@@ -196,7 +196,7 @@ set $bc-color 		 #003366
 # window colors
 # <colorclass>  <border>  <background>  <text>  <indicator>   
 #Name                    border              background         text                 indicator
-client.focused          $bg-color          $bg-color          $text-color          #00ff00
+client.focused          $bg-color          $bc-color          $text-color          #00ff00
 client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
 client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
