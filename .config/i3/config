@@ -191,6 +191,7 @@ set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
 set $inactive-text-color #7f8c8d
 set $urgent-bg-color     #e74c3c
+set $bc-color 		 #003366
 
 # window colors
 # <colorclass>  <border>  <background>  <text>  <indicator>   
