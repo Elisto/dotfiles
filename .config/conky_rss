@@ -1,0 +1,126 @@
+######################
+# - Conky settings - #
+######################
+update_interval 1
+total_run_times 0
+net_avg_samples 1
+cpu_avg_samples 2
+
+imlib_cache_size 0
+double_buffer yes
+no_buffers yes
+
+format_human_readable
+
+#####################
+# - Text settings - #
+#####################
+use_xft yes
+xftfont Droid Sans:size=8
+override_utf8_locale yes
+text_buffer_size 1024
+
+#############################
+# - Window specifications - #
+#############################
+own_window yes
+own_window_class Conky
+own_window_type override
+own_window_transparent no
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+background yes
+
+alignment top_left
+gap_y 25
+gap_x -1900
+border_inner_margin 0
+
+minimum_size 300 400
+#maximum_width 400
+#maximum_size 650 650
+
+default_bar_size 92 6
+
+#########################
+# - Graphics settings - #
+#########################
+draw_shades no
+default_shade_color 000000
+default_color f3f4f5
+
+own_window_argb_value 215
+own_window_argb_visual yes
+own_window_colour 062104
+
+color0 ffffff
+color1 fffaa0
+
+  
+TEXT
+${font DejaVu Sans Mono:bold:pixelsize=12.92 }
+${alignc} RSS : MangaDex
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 0}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 0}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 1}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 1}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 2}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 2}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 3}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 3}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 4}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 4}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 5}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 5}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 6}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 6}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 7}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 7}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 8}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 8}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 9}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 9}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 10}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 10}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 11}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 11}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 12}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 12}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 13}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 13}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 14}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 14}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 15}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 15}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 16}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 16}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 17}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 17}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 18}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 18}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 19}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 19}
+${hr 1}
+${color1}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_title 20}
+${color0}${rss https://mangadex.org/rss/follows/hBpabdwx8FZPMkDfzY9v6R3yrVCSeGcn 30 item_desc 20}
+${hr 1}

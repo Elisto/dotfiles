@@ -1,0 +1,106 @@
+#############################
+# - Window specifications - #
+#############################
+own_window yes
+own_window_class Conky
+own_window_type override
+own_window_transparent no
+background yes
+double_buffer yes
+
+alignment top_left
+gap_y 35
+gap_x -210
+
+border_width 1
+cpu_avg_samples 2
+default_color white
+default_outline_color white
+default_shade_color white
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+
+
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+
+own_window_colour 062104
+own_window_argb_visual yes
+own_window_argb_value 210
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+minimum_size 200 0
+stippled_borders 0
+update_interval 1.0
+uppercase no
+use_spacer none
+
+show_graph_scale no
+show_graph_range no
+
+use_xft yes
+xftalpha 0.1
+xftfont Droid Sans:size=10
+color0 white
+color1 fffaa0
+color2 FFA300
+color3 9cff68
+color4 68ff93
+color5 ffb168
+color6 68d6ff
+color7 7768ff
+
+TEXT
+
+${color2}${alignc}${nodename}
+${color0}${alignc} ${kernel}
+${color2}UPTIME :${color0}${alignc}${uptime}
+${color2}DATE : ${color0}${alignc}${time}
+${hr 2}
+${color0}CPU ${alignr}${cpu cpu0}%
+${color4}${cpubar cpu0 10,}
+${color0}${cpubar cpu1 5,100}${alignr}${cpu cpu1}%
+${color1}${cpubar cpu2 5,100}${alignr}${cpu cpu2}%
+${color2}${cpubar cpu3 5,100}${alignr}${cpu cpu3}%
+${color3}${cpubar cpu4 5,100}${alignr}${cpu cpu4}%
+${color4}${cpubar cpu5 5,100}${alignr}${cpu cpu5}%
+${color5}${cpubar cpu6 5,100}${alignr}${cpu cpu6}%
+${color6}${cpubar cpu7 5,100}${alignr}${cpu cpu7}%
+${color7}${cpubar cpu8 5,100}${alignr}${cpu cpu8}%
+${color0}CPU Usage ${hr 2}
+${top name 1} $alignr ${top cpu 1}%
+${top name 2} $alignr ${top cpu 2}%
+${top name 3} $alignr ${top cpu 3}%
+${hr 2}
+CPU Temp     ${color2}${hwmon 0 temp 1}°C
+${color4}${hr 2}
+RAM ${alignr}${mem} ${color0}/ ${memmax} 
+${color4}${membar 5,150}${alignr}${memperc}%
+${color0}RAM Usage ${hr 2}
+${top_mem name 1} $alignr ${top_mem mem_res 1}
+${top_mem name 2} $alignr ${top_mem mem_res 2}
+${top_mem name 3} $alignr ${top_mem mem_res 3}
+${top_mem name 4} $alignr ${top_mem mem_res 4}
+${top_mem name 5} $alignr ${top_mem mem_res 5}
+${top_mem name 6} $alignr ${top_mem mem_res 6}
+${top_mem name 7} $alignr ${top_mem mem_res 7}
+${top_mem name 8} $alignr ${top_mem mem_res 8}
+${top_mem name 9} $alignr ${top_mem mem_res 9}
+${top_mem name 10} $alignr ${top_mem mem_res 10}
+DISKS ${hr 2}
+ ${color2}[SSD]${color0}
+${color4}${fs_used /}${color0} / ${fs_size /} ${color4}$alignr ${fs_used_perc /} %
+${color4}${fs_bar 10 /}
+ ${color2}[SHDD]${color0}
+${color4}${fs_used /mnt/Main Drive}${color0} / ${fs_size /mnt/Main Drive} ${color4}$alignr ${fs_used_perc  /mnt/Main Drive} %
+${color4}${fs_bar 10 /mnt/Main Drive}
+${color0}NETWORK ${hr 2}
+${color3}Download ${alignr}${downspeedf enp6s0} KiB/s
+${downspeedgraph enp6s0 80,}
+${color5}Upload ${alignr}${upspeedf enp6s0} KiB/s 
+${upspeedgraph enp6s0 80,}${color0}
